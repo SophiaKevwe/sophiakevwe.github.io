@@ -85,7 +85,7 @@ section {
 }
 
 .home-content p {
-    font-size: 1em; /* Set font size for the About write-up */
+    font-size: 3em; /* Set font size for the About write-up */
     color: #000; /* Black text for the write-up */
     text-align: center;
     margin: 0 auto; /* Centered with auto margin */
