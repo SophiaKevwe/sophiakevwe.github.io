@@ -73,8 +73,8 @@ section {
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     background: none;
-    color: #000; /* White text for the write-up */
-    font-size: 1em; /* Adjust font size as needed */
+    color: #fff; /* White text for the write-up */
+    font-size: 2em; /* Adjust font size as needed */
     text-align: center;
     margin: 0px auto 0 auto; /* Adjust top margin to create space below header */
 }
