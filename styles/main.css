@@ -4,13 +4,13 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    background: linear-gradient(135deg, #fff, #f8bbd0, #b3e5fc); /* Mixture of white, pink, and blue */
+    background: linear-gradient(135deg, #fff, #f48fb1, #0288d1); /* Mixture of white, darker pink, and darker blue */
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #b3e5fc; /* Same as background gradient */
+    background-color: #0288d1; /* Darker blue */
     padding: 10px 0;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #fff; /* Adjusted for better contrast on the dark header */
     text-decoration: none;
     font-weight: bold;
 }
@@ -89,17 +89,17 @@ section {
 
 .resume-btn {
     display: inline-block;
-    background-color: #b3e5fc;
-    color: #333;
+    background-color: #0288d1; /* Darker blue */
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #b3e5fc;
+    border: 2px solid #0288d1;
 }
 
 .resume-btn:hover {
-    background-color: #a2c8e2;
+    background-color: #0277bd; /* Even darker blue for hover effect */
 }
 
 .timeline {
@@ -113,7 +113,7 @@ section {
     position: relative;
     margin: 10px 0;
     padding: 20px 0;
-    border-left: 2px solid #b3e5fc;
+    border-left: 2px solid #0288d1; /* Darker blue for timeline */
 }
 
 .timeline-date {
@@ -125,7 +125,7 @@ section {
     background: #fff;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #b3e5fc;
+    border: 1px solid #0288d1;
 }
 
 .timeline-content {
@@ -138,15 +138,15 @@ section {
 
 .contact-btn {
     display: inline-block;
-    background-color: #b3e5fc;
-    color: #333;
+    background-color: #0288d1; /* Darker blue */
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #b3e5fc;
+    border: 2px solid #0288d1;
 }
 
 .contact-btn:hover {
-    background-color: #a2c8e2;
+    background-color: #0277bd; /* Even darker blue for hover effect */
 }
