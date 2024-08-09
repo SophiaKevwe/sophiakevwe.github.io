@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia Umukoro Portfolio</title>
+    <title>Sophia Umukoro - Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,60 +20,54 @@
         </nav>
     </header>
 
-    <section id="home" class="home">
-        <h1>Hi, I'm Sophia Umukoro, Data Scientist and AI Engineer</h1>
-        <p>
-            As a Data Scientist and AI Engineer, I believe that data is at the core of informed decision-making and ingenious solutions. My passion lies in transforming raw data into actionable insights that drive business and technology forward. Building on a solid background in Data Science, I apply sophisticated methods in Machine Learning, NLP, and Clustering, alongside skills in Python programming, SQL database management, and data visualization with tools like Power BI, to display patterns and predictions that matter. I am continuously learning and evolving, currently deepening my expertise through a Master's degree in Artificial Intelligence Engineering. My work reflects a commitment to excellence, supported by a track record of successful projects that showcase my ability to solve problems and communicate insights effectively. Explore my portfolio to see how I apply data science to real-world challenges, and feel free to connect with me to discuss the future of technology using data.
-        </p>
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Sophia Umukoro, Data Scientist and AI Engineer</h1>
+            <p>
+                As a Data Scientist and AI Engineer, I believe that data is at the core of informed decision-making and ingenious solutions. My passion lies in transforming raw data into actionable insights that drive business and technology forward. Building on a solid background in Data Science, I apply sophisticated methods in Machine Learning, NLP, and Clustering, alongside skills in Python programming, SQL database management, and data visualization with tools like Power BI, to display patterns and predictions that matter. I am continuously learning and evolving, currently deepening my expertise through a Master's degree in Artificial Intelligence Engineering. My work reflects a commitment to excellence, supported by a track record of successful projects that showcase my ability to solve problems and communicate insights effectively. Explore my portfolio to see how I apply data science to real-world challenges, and feel free to connect with me to discuss the future of technology using data.
+            </p>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-grid">
-            <!-- Example Project Item -->
-            <div class="project-item">
-                <img src="images/project1.jpg" alt="Project 1">
-                <div class="project-text">
-                    <h3>Project Title 1</h3>
-                    <p>Description of Project 1. This is a brief overview of the project and its outcomes.</p>
+        <div class="projects-container">
+            <!-- Repeat the below block for each project -->
+            <div class="project">
+                <img src="path/to/project-image.jpg" alt="Project Image">
+                <div class="project-description">
+                    <h3>Project Title</h3>
+                    <p>Project description goes here.</p>
                 </div>
             </div>
-            <div class="project-item">
-                <img src="images/project2.jpg" alt="Project 2">
-                <div class="project-text">
-                    <h3>Project Title 2</h3>
-                    <p>Description of Project 2. This is a brief overview of the project and its outcomes.</p>
-                </div>
-            </div>
-            <!-- Add more project items as needed -->
+            <!-- End repeat -->
         </div>
     </section>
 
     <section id="resume">
         <h2>Resume</h2>
-        <a href="https://drive.google.com/your-google-drive-lin" target="_blank" class="resume-button">Download Resume</a>
-        <a href="#contact" class="contact-button">Contact Me</a>
+        <p>To download or view my resume, click the button below or access it via the contact section.</p>
+        <a href="your-google-drive-link" class="resume-btn" target="_blank">View Resume</a>
     </section>
 
     <section id="work-experience">
         <h2>Work Experience</h2>
         <div class="timeline">
-            <!-- Example Timeline Item -->
+            <!-- Repeat the below block for each work experience -->
             <div class="timeline-item">
-                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-date">Date</div>
                 <div class="timeline-content">
-                    <h3>Job Title at Company</h3>
-                    <p>Responsibilities and achievements in this role.</p>
+                    <h3>Job Title</h3>
+                    <p>Job description goes here.</p>
                 </div>
             </div>
-            <!-- Add more timeline items as needed -->
+            <!-- End repeat -->
         </div>
     </section>
 
     <section id="contact">
-        <!-- Contact content here -->
+        <h2>Contact</h2>
+        <a href="mailto:your-email@example.com" class="contact-btn">Contact Me</a>
     </section>
-
-    <script src="scripts/main.js"></script>
 </body>
 </html>
