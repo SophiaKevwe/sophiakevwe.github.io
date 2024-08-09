@@ -53,7 +53,7 @@ nav ul li a {
     border-radius: 5px;
     font-weight: bold;
     border: 2px solid #8b3b5e;
-    margin-left: 50px; /* Position to the right */
+    margin-left: 90px; /* Position to the right */
 }
 
 .contact-btn:hover {
@@ -66,13 +66,13 @@ section {
 }
 
 .home-content {
-    height: 10px
+    height: 90px
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     background: none;
-    color: #000; /* Black text for the write-up */
+    color: #fff; /* Black text for the write-up */
     font-size: 1em; /* Adjust font size as needed */
     text-align: center;
     margin: 0 auto; /* Centered with auto margin */
