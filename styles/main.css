@@ -63,22 +63,22 @@ section {
     justify-content: flex-start; /* Aligns content closer to the top */
     align-items: center;
     height: 100vh;
-    padding-top: 70px; /* Adds padding to bring the text closer to the tab */
+    padding-top: 50px; /* Adds padding to bring the text closer to the tab */
     background: none;
     color: #000; /* Changes the write-up text to black */
 }
 
 .home-content h1 {
-    font-size: 2em; /* Increase the size slightly */
+    font-size: 1.5em; /* Increase the size slightly */
     font-weight: bold;
     color: #000;
     text-align: left; /* Aligns the text to the left */
     width: 100%; /* Ensures the text takes up full width */
-    margin-left: 5%; /* Adjusts the text position slightly from the left edge */
+    margin-left: 3%; /* Adjusts the text position slightly from the left edge */
 }
 
 .home-content p {
-    font-size: 1em; /* Makes the text smaller than 1em */
+    font-size: 0.5em; /* Makes the text smaller than 1em */
     color: #000; /* Sets the text color to black */
     text-align: center; /* Aligns the text to the left */
 }
