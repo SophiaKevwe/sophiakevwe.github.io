@@ -4,85 +4,81 @@ body {
     padding: 0;
     font-family: 'Times New Roman', serif;
     color: #fff; /* White text throughout the web body */
-    background: linear-gradient(135deg, #ffffff, #b30059, #000080); /* Mixture of white, darker pink, and dark navy blue */
+    background: linear-gradient(135deg, #2c2c2c, #8b3b5e, #0a0a29); /* Dull gray, dull pink, and dark navy blue */
 }
 
 header {
-    position: fixed;
     width: 100%;
-    background-color: #000080; /* Dark navy blue for header */
-    padding: 10px 0;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background-color: #2c2c2c; /* Blending dull gray color for header */
+    padding: 20px 0; /* Increase padding for larger tab */
     color: #fff; /* White text for the header */
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align to the left */
     list-style: none;
     padding: 0;
+    margin-left: 20px; /* Adds left margin for spacing */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-right: 30px; /* Increase spacing between menu items */
 }
 
 nav ul li a {
     color: #fff; /* White text for navigation links */
     text-decoration: none;
+    font-size: 1.3em; /* Increase font size */
     font-weight: bold;
 }
 
 .contact-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    background-color: #b30059; /* Darker pink for the contact button */
+    background-color: #8b3b5e; /* Dull pink for the contact button */
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 25px; /* Larger button size */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #b30059;
+    border: 2px solid #8b3b5e;
+    margin-left: auto; /* Position to the right */
 }
 
 .contact-btn:hover {
-    background-color: #990049; /* Slightly darker shade on hover */
+    background-color: #73284d; /* Slightly darker dull pink shade on hover */
 }
 
 section {
-    padding: 60px 20px;
+    padding: 80px 40px; /* Increased padding */
     text-align: center;
 }
 
 .home-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns content closer to the top */
+    justify-content: center; /* Centered content vertically */
     align-items: center;
     height: 100vh;
-    padding-top: 50px; /* Adds padding to bring the text closer to the tab */
     background: none;
-    color: #000; /* Changes the write-up text to black */
+    color: #000; /* Black text for the write-up */
 }
 
 .home-content h1 {
-    font-size: 1.5em; /* Increase the size slightly */
+    font-size: 3em; /* Larger font size for Portfolio title */
     font-weight: bold;
-    color: #000;
-    text-align: left; /* Aligns the text to the left */
-    width: 100%; /* Ensures the text takes up full width */
-    margin-left: 3%; /* Adjusts the text position slightly from the left edge */
+    color: #fff; /* White color for Portfolio title */
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .home-content p {
-    font-size: 0.5em; /* Makes the text smaller than 1em */
-    color: #000; /* Sets the text color to black */
-    text-align: center; /* Aligns the text to the left */
+    font-size: 0.8em; /* Smaller than 1em for write-up */
+    color: #000; /* Black text for the write-up */
+    text-align: center;
+    margin: 0 auto; /* Centered with auto margin */
+    max-width: 60%; /* Restrict width for better readability */
 }
-
 
 .projects-container {
     display: flex;
@@ -117,17 +113,17 @@ section {
 
 .resume-btn {
     display: inline-block;
-    background-color: #b30059; /* Darker pink for the resume button */
+    background-color: #8b3b5e; /* Dull pink for the resume button */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #b30059;
+    border: 2px solid #8b3b5e;
 }
 
 .resume-btn:hover {
-    background-color: #990049; /* Slightly darker shade on hover */
+    background-color: #73284d; /* Slightly darker dull pink shade on hover */
 }
 
 .timeline {
@@ -164,4 +160,3 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
