@@ -67,16 +67,16 @@ section {
 }
 
 .home-content {
-    height: 10vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
+    height: 80vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     background: none;
     color: #fff; /* White text for the write-up */
-    font-size: 2em; /* Adjust font size as needed */
+    font-size: 1em; /* Adjust font size as needed */
     text-align: center;
-    margin: 10px auto 0 auto; /* Adjust top margin to create space below header */
+    margin: 5px auto 0 auto; /* Adjust top margin to create space below header */
 }
 
 
