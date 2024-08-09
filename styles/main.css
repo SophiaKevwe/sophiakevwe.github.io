@@ -1,20 +1,15 @@
-/* Global Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e2a5a5, #f0b3b3); /* Soft dull red gradient */
-    color: #333;
+    color: #fff;
+    background: linear-gradient(135deg, #d32f2f, #b71c1c); /* Gradient dark red color */
 }
 
 header {
-    background: #e2a5a5; /* Soft dull red */
+    background: #d32f2f; /* Match header background with the page gradient */
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
 nav ul {
@@ -33,46 +28,54 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
 }
 
-section {
-    padding: 60px 20px;
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
-h1, h2 {
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home h1 {
+    font-size: 2.5em;
+    font-weight: bold;
     margin: 0;
 }
 
-.project {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+.home p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.project img {
-    width: 100px;
-    height: 30px;
-    margin-right: 20px;
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for sections */
 }
 
-.project-info {
-    max-width: 600px;
+/* Projects */
+#projects {
+    /* Project specific styles */
 }
 
-.timeline {
-    list-style-type: none;
-    padding: 0;
-}
-
-.timeline-item {
-    margin-bottom: 20px;
-}
-
-footer {
+/* Resume */
+#resume {
     text-align: center;
-    padding: 10px 0;
-    background: #e2a5a5; /* Soft dull red */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Work Experience */
+#work-experience {
+    /* Work Experience specific styles */
+}
+
+/* Contact */
+#contact {
+    /* Contact specific styles */
 }
