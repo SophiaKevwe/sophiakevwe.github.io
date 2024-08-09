@@ -8,13 +8,19 @@ body {
 }
 
 header {
+    position: fixed;
     width: 100%;
-    background-color: #2c2c2c; /* Blending dull gray color for header */
-    padding: 20px 0; /* Increase padding for larger tab */
-    color: #fff; /* White text for the header */
-    display: flex;
-    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 44, 44, 1); /* Dull gray background initially */
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top of other content */
 }
+
+header.transparent {
+    background-color: rgba(44, 44, 44, 0.7); /* Dull gray but with transparency on scroll */
+}
+
 
 nav {
     margin-left: auto;
@@ -67,7 +73,7 @@ section {
 }
 
 .home-content {
-    height: 90vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
+    height: 80vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
