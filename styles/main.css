@@ -73,8 +73,8 @@ section {
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     background: none;
-    color: #fff; /* White text for the write-up */
-    font-size: 5em; /* Adjust font size as needed */
+    color: #000; /* White text for the write-up */
+    font-size: 0em; /* Adjust font size as needed */
     text-align: center;
     margin: 0px auto 0 auto; /* Adjust top margin to create space below header */
 }
@@ -155,7 +155,7 @@ section {
 
 .timeline-content {
     margin-left: 120px;
-    background: rgba(0, 0, 128, 0.8); /* Dark navy blue background for timeline content */
+    background: #8b3b5e; /* Dark navy blue background for timeline content */
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
