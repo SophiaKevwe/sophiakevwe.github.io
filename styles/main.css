@@ -10,11 +10,13 @@ body {
 header {
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(44, 44, 44, 1); /* Dull gray background initially */
+    background-color: #2c2c2c; /* Blending dull gray color for header */
+    padding: 20px 0; /* Increase padding for larger tab */
+    color: #fff; /* White text for the header */
     transition: background-color 0.3s ease;
     z-index: 1000; /* Ensure it stays on top of other content */
+    display: flex;
+    align-items: center;
 }
 
 header.transparent {
