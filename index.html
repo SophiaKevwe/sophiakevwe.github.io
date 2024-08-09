@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia Umukoro's Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Sophia Umukoro - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#work-experience">Work Experience</a></li>
@@ -19,44 +19,54 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Welcome to my portfolio. Here you can find information about me, my projects, work experience, and more.</p>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is the home section where you can find an overview of my work.</p>
     </section>
 
     <section id="projects">
-        <h1>Projects</h1>
         <div class="project">
             <img src="images/project1.jpg" alt="Project 1">
-            <div class="project-text">
+            <div class="project-description">
                 <h2>Project 1</h2>
                 <p>Description of Project 1.</p>
             </div>
         </div>
-        <!-- Repeat for more projects -->
+        <div class="project">
+            <img src="images/project2.jpg" alt="Project 2">
+            <div class="project-description">
+                <h2>Project 2</h2>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
     </section>
 
     <section id="resume">
-        <h1>Resume</h1>
-        <a href="https://drive.google.com/your-resume-link" target="_blank">View My Resume</a>
+        <h2>Resume</h2>
+        <p>View my resume <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">here</a>.</p>
     </section>
 
     <section id="work-experience">
-        <h1>Work Experience</h1>
+        <h2>Work Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <h2>Position at Company</h2>
+                <h3>Job Title at Company</h3>
                 <p>Details about the job.</p>
+                <span class="date">Year - Year</span>
             </div>
-            <!-- Repeat for more work experiences -->
+            <!-- More timeline items as needed -->
         </div>
     </section>
 
     <section id="contact">
-        <h1>Contact</h1>
-        <p>Contact information or form.</p>
+        <h2>Contact</h2>
+        <p>Get in touch through email or social media.</p>
     </section>
 
-    <script src="scripts/main.js"></script>
+    <footer>
+        <p>&copy; 2024 Sophia Umukoro</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
