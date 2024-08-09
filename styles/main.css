@@ -8,28 +8,20 @@ body {
 }
 
 header {
+    position: fixed;
     width: 100%;
     background-color: #2c2c2c; /* Blending dull gray color for header */
     padding: 20px 0; /* Increase padding for larger tab */
     color: #fff; /* White text for the header */
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top of other content */
     display: flex;
     align-items: center;
 }
 
-header.hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+header.transparent {
+    background-color: rgba(44, 44, 44, 0.7); /* Dull gray but with transparency on scroll */
 }
-
-header.visible {
-    transform: translateY(0);
-    background-color: rgba(44, 44, 44, 0.7); /* Dull gray but with transparency on hover */
-}
-
-header:hover {
-    background-color: rgba(44, 44, 44, 0.9); /* Slightly less transparent on hover */
-}
-
 
 nav {
     margin-left: auto;
@@ -89,7 +81,7 @@ section {
     align-items: center; /* Horizontally center the content */
     background: none;
     color: #fff; /* White text for the write-up */
-    font-size: 1em; /* Adjust font size as needed */
+    font-size: 1.5em; /* Adjust font size as needed */
     text-align: center;
 }
 
