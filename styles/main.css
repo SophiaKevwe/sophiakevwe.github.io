@@ -63,18 +63,18 @@ section {
     justify-content: flex-start; /* Aligns content closer to the top */
     align-items: center;
     height: 100vh;
-    padding-top: 100px; /* Adds padding to bring the text closer to the tab */
+    padding-top: 90px; /* Adds padding to bring the text closer to the tab */
     background: none;
     color: #000; /* Changes the write-up text to black */
 }
 
 .home-content h1 {
-    font-size: 4em; /* Increases the font size of "Sophia Umukoro's Portfolio" */
+    font-size: 5em; /* Increases the font size of "Sophia Umukoro's Portfolio" */
     font-weight: bold;
 }
 
 .home-content p {
-    font-size: 3em; /* Matches the write-up text size to the previous "Sophia Umukoro's Portfolio" size */
+    font-size: 1em; /* Matches the write-up text size to the previous "Sophia Umukoro's Portfolio" size */
     color: #000; /* Ensures the write-up text is black */
 }
 
