@@ -12,6 +12,18 @@ header {
     background-color: #2c2c2c; /* Blending dull gray color for header */
     padding: 20px 0; /* Increase padding for larger tab */
     color: #fff; /* White text for the header */
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.header-title {
+    margin-left: 20px;
+    font-size: 1.5em; /* Adjust font size for the portfolio title */
+    font-weight: bold;
 }
 
 nav ul {
@@ -73,7 +85,7 @@ section {
 }
 
 .home-content p {
-    font-size: 0.8em; /* Smaller than 1em for write-up */
+    font-size: 1em; /* Set font size for the About write-up */
     color: #000; /* Black text for the write-up */
     text-align: center;
     margin: 0 auto; /* Centered with auto margin */
