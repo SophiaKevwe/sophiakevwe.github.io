@@ -16,12 +16,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Scroll event listener for header transparency
+    let lastScrollY = window.scrollY;
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('transparent');
+        const header = document.querySelector('header');
+        if (window.scrollY > lastScrollY) {
+            // Scrolling down
+            header.classList.add('hidden');
         } else {
-            header.classList.remove('transparent');
+            // Scrolling up
+            header.classList.remove('hidden');
+            header.classList.add('visible');
         }
+        lastScrollY = window.scrollY;
+    });
+    
+    header.addEventListener('mouseleave', function() {
+        // Ensures header becomes transparent after hover
+        header.classList.remove('visible');
     });
 });
