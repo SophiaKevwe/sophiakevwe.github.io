@@ -168,13 +168,16 @@ section {
 }
 
 #contact {
-    text-align: center;
+    text-align: left; /* Align text to the left */
     padding: 40px;
+    max-width: 800px; /* Optional: Limit the width for better alignment */
+    margin: 0 auto; /* Center the entire contact section within its container */
 }
 
 #contact p {
     margin: 10px 0;
     font-size: 1.2em;
+    text-align: left; /* Ensure each paragraph is aligned to the left */
 }
 
 #contact a {
@@ -188,10 +191,11 @@ section {
 
 .social-icons {
     margin-top: 20px;
+    text-align: left; /* Align social icons to the left */
 }
 
 .social-icons a {
-    margin: 0 10px;
+    margin-right: 10px; /* Space between icons */
     display: inline-block;
 }
 
