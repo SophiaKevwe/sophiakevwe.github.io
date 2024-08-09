@@ -67,7 +67,7 @@ section {
 }
 
 .home-content {
-    height: 80vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
+    height: 90vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
