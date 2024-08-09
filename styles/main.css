@@ -54,28 +54,125 @@ nav ul li a:hover {
     margin: 20px auto;
 }
 
-/* Section Styles */
-section {
+/* Projects Section */
+#projects {
     padding: 60px 20px;
     background: rgba(255, 255, 255, 0.1); /* Light overlay for sections */
 }
 
-/* Projects */
-#projects {
-    /* Project specific styles */
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-/* Resume */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px); /* Three columns */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+}
+
+.project-text {
+    padding: 15px;
+}
+
+/* Resume Section */
 #resume {
     text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for sections */
 }
 
-/* Work Experience */
+.resume-button, .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #d32f2f; /* Dark red */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.resume-button:hover, .contact-button:hover {
+    background: #b71c1c; /* Slightly darker red */
+}
+
+/* Work Experience Section */
 #work-experience {
-    /* Work Experience specific styles */
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for sections */
 }
 
-/* Contact */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -80px;
+    width: 60px;
+    text-align: center;
+    background: #d32f2f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    margin-left: 100px;
+}
+
+/* Contact Section */
 #contact {
-    /* Contact specific styles */
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for sections */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project-item {
+        width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        width: 100%; /* Single column on very small screens */
+    }
+
+    .timeline-date {
+        display: none;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
 }
