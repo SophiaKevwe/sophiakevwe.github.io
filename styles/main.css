@@ -70,10 +70,10 @@ section {
     flex-direction: column;
     justify-content: center; /* Centered content vertically */
     align-items: center;
-    height: 100vh;
+    height:50vh;
     background: none;
     color: #000; /* Black text for the write-up */
-    font-size: 0.5em; /* Set font size for the About write-up */\
+    font-size: 0.05em; /* Set font size for the About write-up */\
     text-align: center;
     margin: 0 auto; /* Centered with auto margin */
 }
