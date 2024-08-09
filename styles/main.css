@@ -2,19 +2,22 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #333;
-    background: linear-gradient(135deg, #fff, #f48fb1, #0288d1); /* Mixture of white, darker pink, and darker blue */
+    background: linear-gradient(135deg, #ffffff, #880e4f, #0d1b2a); /* Mixture of white, darker pink, and dark navy blue */
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #0288d1; /* Darker blue */
-    padding: 10px 0;
+    background-color: #0d1b2a; /* Same as the dark navy blue in the gradient */
+    padding: 10px 20px;
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -22,6 +25,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -29,13 +33,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Adjusted for better contrast on the dark header */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
+.contact-btn {
+    background-color: #880e4f; /* Darker pink */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #880e4f;
+}
+
+.contact-btn:hover {
+    background-color: #ae164f;
+}
+
 section {
-    padding: 60px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -48,22 +66,20 @@ section {
     background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center-align text */
 }
 
 .home-content h1 {
-    font-size: 3em; /* Increased size */
+    font-size: 3em;
     font-weight: bold;
-    color: #333;
-    margin: 0;
+    color: #0d1b2a;
+    margin-bottom: 20px;
 }
 
 .home-content p {
-    font-size: 1.2em; /* Increased size for the paragraph */
-    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.5;
     color: #333;
-    max-width: 800px; /* Ensure text does not stretch too wide */
-    margin-top: 20px;
+    max-width: 800px;
 }
 
 .projects-container {
@@ -79,8 +95,8 @@ section {
     margin: 20px;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
-    background-color: #333; /* Dark color for project columns */
-    color: #fff;
+    background-color: #0d1b2a; /* Dark color for project columns */
+    color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -99,17 +115,17 @@ section {
 
 .resume-btn {
     display: inline-block;
-    background-color: #0288d1; /* Darker blue */
-    color: #fff;
+    background-color: #880e4f;
+    color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #0288d1;
+    border: 2px solid #880e4f;
 }
 
 .resume-btn:hover {
-    background-color: #0277bd; /* Even darker blue for hover effect */
+    background-color: #ae164f;
 }
 
 .timeline {
@@ -123,7 +139,7 @@ section {
     position: relative;
     margin: 10px 0;
     padding: 20px 0;
-    border-left: 2px solid #0288d1; /* Darker blue for timeline */
+    border-left: 2px solid #0d1b2a;
 }
 
 .timeline-date {
@@ -135,7 +151,7 @@ section {
     background: #fff;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #0288d1;
+    border: 1px solid #0d1b2a;
 }
 
 .timeline-content {
@@ -144,19 +160,4 @@ section {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact-btn {
-    display: inline-block;
-    background-color: #0288d1; /* Darker blue */
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    border: 2px solid #0288d1;
-}
-
-.contact-btn:hover {
-    background-color: #0277bd; /* Even darker blue for hover effect */
 }
