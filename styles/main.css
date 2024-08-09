@@ -63,19 +63,27 @@ section {
     justify-content: flex-start; /* Aligns content closer to the top */
     align-items: center;
     height: 100vh;
-    padding-top: 90px; /* Adds padding to bring the text closer to the tab */
+    padding-top: 70px; /* Adds padding to bring the text closer to the tab */
     background: none;
     color: #000; /* Changes the write-up text to black */
 }
 
 .home-content h1 {
-    font-size: 5em; /* Increases the font size of "Sophia Umukoro's Portfolio" */
+    font-size: 3.5em; /* Increase the size slightly */
     font-weight: bold;
+    color: #fff;
+    text-align: left; /* Aligns the text to the left */
+    width: 100%; /* Ensures the text takes up full width */
+    margin-left: 5%; /* Adjusts the text position slightly from the left edge */
 }
 
 .home-content p {
-    font-size: 1em; /* Matches the write-up text size to the previous "Sophia Umukoro's Portfolio" size */
-    color: #000; /* Ensures the write-up text is black */
+    font-size: 0.9em; /* Makes the text smaller than 1em */
+    color: #000; /* Sets the text color to black */
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 5%; /* Positions the text slightly from the left edge */
+    max-width: 90%; /* Limits the width to 90% for readability */
+    margin-top: 20px; /* Adds a margin to bring it closer to the header */
 }
 
 
