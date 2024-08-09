@@ -66,10 +66,6 @@ section {
 }
 
 .home-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centered content vertically */
-    align-items: center;
     height:50vh;
     background: none;
     color: #000; /* Black text for the write-up */
