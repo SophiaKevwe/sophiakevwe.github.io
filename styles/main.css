@@ -73,7 +73,7 @@ section {
     height: 100vh;
     background: none;
     color: #000; /* Black text for the write-up */
-    font-size: 2em; /* Set font size for the About write-up */\
+    font-size: 0.5em; /* Set font size for the About write-up */\
     text-align: center;
     margin: 0 auto; /* Centered with auto margin */
 }
