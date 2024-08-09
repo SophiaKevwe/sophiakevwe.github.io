@@ -67,19 +67,15 @@ section {
 }
 
 .home-content {
-    height: 100vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
+    height: 70vh; /* Ensure it's visible, adjusted height to cover more of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     background: none;
     color: #fff; /* White text for the write-up */
-    font-size: 3em; /* Adjust font size as needed */
+    font-size: 2em; /* Adjust font size as needed */
     text-align: center;
-}
-
-.home-content p {
-    font-size: 2em;
 }
 
 .projects-container {
