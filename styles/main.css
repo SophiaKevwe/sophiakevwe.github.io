@@ -167,3 +167,41 @@ section {
     color: #fff; /* White text for content box */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+#contact p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#contact a {
+    color: #fff; /* Adjust this to match your theme */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size of the icons */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Slightly increase the size on hover */
+}
