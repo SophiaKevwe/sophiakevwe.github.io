@@ -2,22 +2,20 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    color: #333;
-    background: linear-gradient(135deg, #ffffff, #880e4f, #0d1b2a); /* Mixture of white, darker pink, and dark navy blue */
+    font-family: 'Times New Roman', serif;
+    color: #fff; /* White text throughout the web body */
+    background: linear-gradient(135deg, #ffffff, #b30059, #000080); /* Mixture of white, darker pink, and dark navy blue */
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #0d1b2a; /* Same as the dark navy blue in the gradient */
-    padding: 10px 20px;
+    background-color: #000080; /* Dark navy blue for header */
+    padding: 10px 0;
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #fff; /* White text for the header */
 }
 
 nav ul {
@@ -25,7 +23,6 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -33,27 +30,30 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #fff; /* White text for navigation links */
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-btn {
-    background-color: #880e4f; /* Darker pink */
-    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #b30059; /* Darker pink for the contact button */
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #880e4f;
+    border: 2px solid #b30059;
 }
 
 .contact-btn:hover {
-    background-color: #ae164f;
+    background-color: #990049; /* Slightly darker shade on hover */
 }
 
 section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -63,23 +63,13 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: none; /* Removing white background */
+    color: #fff;
 }
 
 .home-content h1 {
-    font-size: 3em;
+    font-size: 3em; /* Bigger font size */
     font-weight: bold;
-    color: #0d1b2a;
-    margin-bottom: 20px;
-}
-
-.home-content p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #333;
-    max-width: 800px;
 }
 
 .projects-container {
@@ -95,8 +85,8 @@ section {
     margin: 20px;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
-    background-color: #0d1b2a; /* Dark color for project columns */
-    color: #ffffff;
+    background-color: #333; /* Dark color for project columns */
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -115,17 +105,17 @@ section {
 
 .resume-btn {
     display: inline-block;
-    background-color: #880e4f;
-    color: #ffffff;
+    background-color: #b30059; /* Darker pink for the resume button */
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #880e4f;
+    border: 2px solid #b30059;
 }
 
 .resume-btn:hover {
-    background-color: #ae164f;
+    background-color: #990049; /* Slightly darker shade on hover */
 }
 
 .timeline {
@@ -139,7 +129,7 @@ section {
     position: relative;
     margin: 10px 0;
     padding: 20px 0;
-    border-left: 2px solid #0d1b2a;
+    border-left: 2px solid #fff; /* White for timeline line */
 }
 
 .timeline-date {
@@ -148,16 +138,18 @@ section {
     width: 90px;
     text-align: center;
     font-weight: bold;
-    background: #fff;
+    background: #000080; /* Dark navy blue for timeline date */
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #0d1b2a;
+    border: 1px solid #fff; /* White border for timeline date */
+    color: #fff; /* White text for timeline date */
 }
 
 .timeline-content {
     margin-left: 120px;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    background: rgba(0, 0, 128, 0.8); /* Dark navy blue background for timeline content */
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
