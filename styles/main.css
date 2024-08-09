@@ -144,7 +144,7 @@ section {
     width: 90px;
     text-align: center;
     font-weight: bold;
-    background: #333; /* Dark navy blue for timeline date */
+    background: #333; /* Dark color for timeline date */
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #fff; /* White border for timeline date */
@@ -153,8 +153,9 @@ section {
 
 .timeline-content {
     margin-left: 120px;
-    background: #333; /* 
+    background: #333; /* Dark color for timeline content box */
     padding: 10px;
     border-radius: 5px;
+    color: #fff; /* White text for content box */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
