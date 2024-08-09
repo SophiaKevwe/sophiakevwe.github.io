@@ -17,7 +17,6 @@ header {
     z-index: 1000; /* Ensure it stays on top of other content */
     display: flex;
     align-items: center;
-    line-height: 1.5;
 }
 
 header.transparent {
@@ -84,6 +83,7 @@ section {
     color: #fff; /* White text for the write-up */
     font-size: 1.5em; /* Adjust font size as needed */
     text-align: center;
+    line-height: 1.5;
 }
 
 .projects-container {
