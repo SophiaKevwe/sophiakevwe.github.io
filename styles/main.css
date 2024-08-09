@@ -81,9 +81,9 @@ section {
     align-items: center; /* Horizontally center the content */
     background: none;
     color: #fff; /* White text for the write-up */
-    font-size: 1.5em; /* Adjust font size as needed */
+    font-size: 1.7em; /* Adjust font size as needed */
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .projects-container {
