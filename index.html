@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia Umukoro - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Sophia Umukoro's Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="work-experience.html">Work Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the home section where you can introduce yourself.</p>
-        </section>
-    </main>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio. Here you can find information about me, my projects, work experience, and more.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Sophia Umukoro</p>
-    </footer>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <img src="images/project1.jpg" alt="Project 1">
+            <div class="project-text">
+                <h2>Project 1</h2>
+                <p>Description of Project 1.</p>
+            </div>
+        </div>
+        <!-- Repeat for more projects -->
+    </section>
+
+    <section id="resume">
+        <h1>Resume</h1>
+        <a href="https://drive.google.com/your-resume-link" target="_blank">View My Resume</a>
+    </section>
+
+    <section id="work-experience">
+        <h1>Work Experience</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h2>Position at Company</h2>
+                <p>Details about the job.</p>
+            </div>
+            <!-- Repeat for more work experiences -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Contact information or form.</p>
+    </section>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
