@@ -1,29 +1,32 @@
-/* Resetting some default styles */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-}
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #C8102E, #F12C2C);
+    color: #fff;
 }
 
 header {
-    background: #007BFF; /* Corporate color */
-    color: #fff;
-    padding: 1rem 0;
+    background: #C8102E;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -33,79 +36,43 @@ nav ul li a {
 }
 
 section {
-    padding: 2rem;
-    background: #f4f4f4; /* Light background color */
-    margin-bottom: 1rem;
+    padding: 60px 20px;
 }
 
-/* Specific section styles */
-#about {
-    background: #e9ecef; /* Light gray gradient */
-}
-
-#projects {
-    background: #f8f9fa; /* Slightly different light gray */
+h1, h2 {
+    margin: 0;
 }
 
 .project {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 .project img {
-    width: 50%;
-    height: auto;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
 }
 
-.project-text {
-    padding: 1rem;
-    width: 50%;
-}
-
-#resume {
-    background: #fff; /* White background for clean look */
-}
-
-#work-experience {
-    background: #e9ecef;
+.project-info {
+    max-width: 600px;
 }
 
 .timeline {
-    position: relative;
-    padding-left: 2rem;
+    list-style-type: none;
+    padding: 0;
 }
 
 .timeline-item {
-    position: relative;
-    padding: 1rem 0;
+    margin-bottom: 20px;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -0.6rem;
-    top: 0;
-    width: 0.8rem;
-    height: 0.8rem;
-    background: #007BFF; /* Corporate color */
-    border-radius: 50%;
-}
-
-#contact {
-    background: #fff;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #C8102E;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
