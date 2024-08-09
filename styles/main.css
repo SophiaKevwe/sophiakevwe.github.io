@@ -17,6 +17,7 @@ header {
     z-index: 1000; /* Ensure it stays on top of other content */
     display: flex;
     align-items: center;
+    line-height: 1.5;
 }
 
 header.transparent {
