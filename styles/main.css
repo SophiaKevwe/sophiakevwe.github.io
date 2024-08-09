@@ -78,6 +78,9 @@ section {
     text-align: center;
 }
 
+.home-content p {
+    font-size: 2em;
+}
 
 .projects-container {
     display: flex;
