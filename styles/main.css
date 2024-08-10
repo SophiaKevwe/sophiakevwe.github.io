@@ -151,13 +151,13 @@ section {
 
 .timeline-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     margin: 20px 0;
     padding: 20px 0;
     border-left: 2px solid #fff; /* Timeline line color */
     position: relative;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if needed */
 }
-
 
 .timeline-logo {
     display: flex;
@@ -193,6 +193,7 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
     margin-left: 20px;
+    min-width: 300px; /* Ensure a minimum width for the content box */
 }
 
 
