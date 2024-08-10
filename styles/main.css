@@ -168,23 +168,25 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 120px; /* Adjust as needed */
+    width: 150px;/* Adjust as needed */
+    height: 150px;
+    
 }
 
 .timeline-logo img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
     border-radius: 5px;
     border: 1px solid #fff; /* Border around the logo */
     margin-bottom: 10px;
 }
 
 .company-info {
-    color: #fff; /* White text for company info */
+    color: #333; /* White text for company info */
 }
 
 .timeline-content {
-    background: #333; /* Dark color for content box */
+    background: #fff; /* Dark color for content box */
     padding: 20px;
     border-radius: 5px;
     color: #fff; /* White text for content */
