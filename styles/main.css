@@ -118,16 +118,15 @@ section {
 }
 
 .resume-content {
-    margin-top: 40px; /* Adjust spacing as needed */
+    margin-top: 10px; /* Adjust spacing as needed */
     text-align: center;
-    background-color: #2c2c2c; /* Match the background color */
     padding: 20px;
     border-radius: 5px;
     color: #fff; /* White text */
 }
 
 .resume-content .resume-btn {
-    background-color: #8b3b5e; /* Dull pink for the resume button */
+    background-color: #2c2c2c; /* Dull pink for the resume button */
     color: #fff;
     padding: 15px 25px;
     text-decoration: none;
