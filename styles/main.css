@@ -168,28 +168,30 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 120px; /* Adjust as needed */
+    flex-shrink: 0;
+    width: 150px; /* Adjust as needed */
 }
 
 .timeline-logo img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
+    width: 100%; /* Make the logo take full width */
+    height: 100%; /* Make the logo take full height */
+    object-fit: cover; /* Ensure the image covers the entire box */
     border-radius: 5px;
     border: 1px solid #fff; /* Border around the logo */
-    margin-bottom: 10px;
 }
 
 .company-info {
-    color: #fff; /* White text for company info */
+    color: #333; /* Dark text color for company info */
+    margin-top: 10px;
 }
 
 .timeline-content {
-    background: #333; /* Dark color for content box */
+    background: #fff; /* White background for content box */
     padding: 20px;
     border-radius: 5px;
-    color: #fff; /* White text for content */
+    color: #333; /* Dark text color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 160px); /* Adjust based on logo width */
+    flex-grow: 1;
     margin-left: 20px;
 }
 
