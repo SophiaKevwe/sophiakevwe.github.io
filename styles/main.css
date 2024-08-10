@@ -158,11 +158,6 @@ section {
     position: relative;
 }
 
-.timeline-item.reversed {
-    flex-direction: row-reverse;
-    border-left: none;
-    border-right: 2px solid #fff; /* Timeline line color on reversed items */
-}
 
 .timeline-logo {
     display: flex;
@@ -200,10 +195,6 @@ section {
     margin-left: 20px;
 }
 
-.timeline-item.reversed .timeline-content {
-    margin-left: 0;
-    margin-right: 20px;
-}
 
 
 #contact {
