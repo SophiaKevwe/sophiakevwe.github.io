@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('nav ul li a');
     const header = document.querySelector('header');
+    let timer;
 
     // Smooth scrolling for navigation links
     links.forEach(link => {
@@ -16,12 +17,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Scroll event listener for header transparency
+    // Function to show header
+    function showHeader() {
+        header.classList.remove('transparent');
+        header.style.display = 'block'; // Ensure the header is visible
+    }
+
+    // Function to hide header
+    function hideHeader() {
+        header.style.display = 'none';
+    }
+
+    // Scroll event listener for header transparency and auto-hide
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('transparent');
-        } else {
-            header.classList.remove('transparent');
-        }
+        clearTimeout(timer);
+        showHeader();
+
+        timer = setTimeout(function() {
+            hideHeader();
+        }, 3000); // Hide the header after 3 seconds of inactivity
     });
+
+    // Initial hide of the header
+    hideHeader();
 });
