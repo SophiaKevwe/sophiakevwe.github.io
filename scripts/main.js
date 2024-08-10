@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('nav ul li a');
     const header = document.querySelector('header');
     let timer;
+    let isHome = true; // Variable to track if we're on the home page
 
     // Smooth scrolling for navigation links
     links.forEach(link => {
@@ -25,19 +26,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to hide header
     function hideHeader() {
-        header.style.display = 'none';
+        if (!isHome) {
+            header.style.display = 'none';
+        }
     }
 
     // Scroll event listener for header transparency and auto-hide
     window.addEventListener('scroll', function() {
         clearTimeout(timer);
-        showHeader();
 
-        timer = setTimeout(function() {
-            hideHeader();
-        }, 3000); // Hide the header after 3 seconds of inactivity
+        const scrollTop = window.scrollY;
+        const homeSection = document.getElementById('home');
+
+        // Check if we're on the home page
+        if (scrollTop >= homeSection.offsetTop && scrollTop < (homeSection.offsetTop + homeSection.offsetHeight)) {
+            isHome = true;
+            showHeader(); // Always show header on home page
+        } else {
+            isHome = false;
+            showHeader();
+
+            timer = setTimeout(function() {
+                hideHeader();
+            }, 3000); // Hide the header after 3 seconds of inactivity
+        }
     });
 
-    // Initial hide of the header
-    hideHeader();
+    // Initial hide of the header on other sections
+    if (window.scrollY >= document.getElementById('home').offsetHeight) {
+        hideHeader();
+    }
 });
