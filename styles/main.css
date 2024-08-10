@@ -96,7 +96,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 5px;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
     background-color: #fff; /* Dark color for project columns */
@@ -107,7 +107,7 @@ section {
 
 .project img {
     width: 100%;
-    height: 100px;
+    height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
