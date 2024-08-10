@@ -168,12 +168,12 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 160px; /* Adjust as needed */
+    width: 120px; /* Adjust as needed */
 }
 
 .timeline-logo img {
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
     border-radius: 5px;
     border: 1px solid #fff; /* Border around the logo */
     margin-bottom: 10px;
@@ -184,10 +184,10 @@ section {
 }
 
 .timeline-content {
-    background: #fff; /* Dark color for content box */
+    background: #333; /* Dark color for content box */
     padding: 20px;
     border-radius: 5px;
-    color: #333; /* White text for content */
+    color: #fff; /* White text for content */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     width: calc(100% - 160px); /* Adjust based on logo width */
     margin-left: 20px;
@@ -197,6 +197,7 @@ section {
     margin-left: 0;
     margin-right: 20px;
 }
+
 
 #contact {
     text-align: left; /* Align text to the left */
