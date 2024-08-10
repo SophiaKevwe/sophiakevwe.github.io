@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const header = document.querySelector('header');
+    const homeSection = document.getElementById('home');
     let scrollTimeout;
 
     // Smooth scrolling for navigation links
@@ -31,13 +32,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Scroll event listener
     window.addEventListener('scroll', function() {
-        showHeader(); // Show the header when the user scrolls
-
-        // Clear the previous timeout to reset the delay
-        clearTimeout(scrollTimeout);
-
-        // Set a timeout to hide the header after 3 seconds
-        scrollTimeout = setTimeout(hideHeader, 3000);
+        if (window.scrollY < homeSection.offsetHeight) {
+            // If the user is on the home page, keep the header fixed and visible
+            showHeader();
+            clearTimeout(scrollTimeout);
+        } else {
+            // If the user is on other sections, hide the header after 3 seconds
+            showHeader(); // Show the header when the user scrolls
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(hideHeader, 2000);
+        }
     });
 
     // Ensure header is visible on page load
