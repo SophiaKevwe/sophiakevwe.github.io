@@ -103,12 +103,12 @@ section {
     color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 200px;
+    height: 400px;
 }
 
 .project img {
     width: 100%;
-    height: 100px;
+    height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
