@@ -143,64 +143,61 @@ section {
 
 .timeline {
     position: relative;
-    padding: 10px 0;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .timeline-item {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px 0;
-    border-left: 2px solid #fff; /* Timeline line color */
+    padding: 20px;
+    background-color: #fff; /* White background for timeline items */
+    border-radius: 6px;
+    margin: 10px 0;
     position: relative;
 }
 
 .timeline-item.reversed {
-    flex-direction: row-reverse;
-    border-left: none;
-    border-right: 2px solid #fff; /* Timeline line color on reversed items */
+    background-color: #f9f9f9; /* Light gray for reversed items */
 }
 
 .timeline-logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    flex-shrink: 0;
-    width: 150px; /* Adjust as needed */
-    background: #fff; /* White background for the logo box */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
 }
 
 .timeline-logo img {
-    width: 100%; /* Make the logo take full width */
-    height: auto; /* Maintain the aspect ratio of the logo */
-    object-fit: cover; /* Ensure the image covers the entire box */
-    border-radius: 5px;
-    border: 1px solid #333; /* Dark border around the logo */
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .company-info {
-    color: #333; /* Dark text color for company info */
-    margin-top: 10px;
-}
-.timeline-content {
-    background: #fff; /* White background for content box */
-    padding: 20px;
-    border-radius: 5px;
-    color: #333; /* Dark text color */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
-    margin-left: 20px;
 }
 
-.timeline-item.reversed .timeline-content {
-    margin-left: 0;
-    margin-right: 20px;
+.company-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.company-info p {
+    margin: 5px 0;
+}
+
+.timeline-content {
+    margin-top: 10px;
+}
+
+.timeline-content h4 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    line-height: 1.5; /* Adjust line spacing */
 }
 
 
