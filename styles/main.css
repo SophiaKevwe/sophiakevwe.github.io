@@ -99,15 +99,15 @@ section {
     margin: 20px;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
-    background-color: #333; /* Dark color for project columns */
-    color: #fff;
+    background-color: #fff; /* Dark color for project columns */
+    color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .project img {
     width: 100%;
-    height: auto;
+    height: 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
