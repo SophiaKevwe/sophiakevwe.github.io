@@ -149,33 +149,55 @@ section {
 }
 
 .timeline-item {
-    position: relative;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
     padding: 20px 0;
-    border-left: 2px solid #fff; /* White for timeline line */
+    border-left: 2px solid #fff; /* Timeline line color */
+    position: relative;
 }
 
-.timeline-date {
-    position: absolute;
-    left: -100px;
-    width: 90px;
+.timeline-item.reversed {
+    flex-direction: row-reverse;
+    border-left: none;
+    border-right: 2px solid #fff; /* Timeline line color on reversed items */
+}
+
+.timeline-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-weight: bold;
-    background: #333; /* Dark color for timeline date */
-    padding: 5px;
+    width: 120px; /* Adjust as needed */
+}
+
+.timeline-logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
     border-radius: 5px;
-    border: 1px solid #fff; /* White border for timeline date */
-    color: #fff; /* White text for timeline date */
+    border: 1px solid #fff; /* Border around the logo */
+    margin-bottom: 10px;
+}
+
+.company-info {
+    color: #fff; /* White text for company info */
 }
 
 .timeline-content {
-    margin-left: 120px;
-    background: #333; /* Dark color for timeline content box */
-    padding: 10px;
+    background: #333; /* Dark color for content box */
+    padding: 20px;
     border-radius: 5px;
-    color: #fff; /* White text for content box */
+    color: #fff; /* White text for content */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 160px); /* Adjust based on logo width */
+    margin-left: 20px;
 }
+
+.timeline-item.reversed .timeline-content {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
 
 #contact {
     text-align: left; /* Align text to the left */
