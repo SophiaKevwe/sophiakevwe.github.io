@@ -173,8 +173,8 @@ section {
 }
 
 .logo-column img {
-    width: 320px; /* Set the logo size */
-    height: 150px;
+    width: 330px; /* Set the logo size */
+    height: 140px;
     border-radius: 5px;
 }
 
@@ -193,7 +193,7 @@ section {
 
 /* White line in the middle */
 .divider {
-    width: 4px;
+    width: 10px;
     background-color: white;
     height: 100%;
 }
