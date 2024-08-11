@@ -173,8 +173,8 @@ section {
 }
 
 .logo-column img {
-    width: 330px; /* Set the logo size */
-    height: 140px;
+    width: 338px; /* Set the logo size */
+    height: 130px;
     border-radius: 5px;
 }
 
@@ -189,7 +189,6 @@ section {
     border-radius: 5px;
     color: #333; /* Dark text color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
-    width: 60%;
 }
 
 /* White line in the middle */
