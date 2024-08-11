@@ -143,57 +143,55 @@ section {
 
 /* Work Experience Section */
 .timeline {
-    position: relative;
-    padding: 10px 0;
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .timeline-item {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    align-items: center;
     margin: 20px 0;
     padding: 20px 0;
-    border-left: 2px solid #fff; /* Timeline line color */
     position: relative;
-    flex-wrap: wrap; /* Ensure items wrap to the next line if needed */
 }
 
-.timeline-logo {
+.column {
+    width: 48%; /* Each column takes 48% of the width */
+}
+
+.logo-column {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex-shrink: 0;
-    width: 150px; /* Adjust as needed */
-    background: #fff; /* White background for the logo box */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
 }
 
-.timeline-logo img {
-    width: 100%; /* Make the logo take full width */
-    height: auto; /* Maintain the aspect ratio of the logo */
-    object-fit: cover; /* Ensure the image covers the entire box */
+.logo-column img {
+    width: 100px; /* Set the logo size */
+    height: auto;
     border-radius: 5px;
-    border: 1px solid #333; /* Dark border around the logo */
 }
 
 .company-info {
-    color: #333; /* Dark text color for company info */
     margin-top: 10px;
+    color: #333; /* Dark text color */
 }
 
-.timeline-content {
+.content-column {
     background: #fff; /* White background for content box */
     padding: 20px;
     border-radius: 5px;
     color: #333; /* Dark text color */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
-    margin-left: 20px;
-    min-width: 300px; /* Ensure a minimum width for the content box */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+}
+
+/* White line in the middle */
+.divider {
+    width: 4px;
+    background-color: white;
+    height: 100%;
 }
 
 
