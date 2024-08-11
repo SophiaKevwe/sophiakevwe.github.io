@@ -167,11 +167,14 @@ section {
     align-items: center;
     text-align: center;
     background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .logo-column img {
-    width: 150px; /* Set the logo size */
-    height: 150px;
+    width: 190px; /* Set the logo size */
+    height: 170px;
     border-radius: 5px;
 }
 
