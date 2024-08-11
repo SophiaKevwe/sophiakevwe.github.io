@@ -170,12 +170,11 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
     padding: 20px;
     border-radius: 5px;
-    width: 70%; /* Company picture column takes 70% width */
-}
+    }
 
 .logo-column img {
     width: 300;
-    height: auto;
+    height: 70%;
     border-radius: 5px;
 }
 
@@ -192,7 +191,6 @@ section {
     border-radius: 5px;
     color: #333; /* Dark text color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
-    width: 30%; /* Text column takes 30% width */
 }
 
 /* White line in the middle */
@@ -200,7 +198,7 @@ section {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 2px;
+    width: 6px;
     background-color: #fff; /* White line in the middle */
     height: 100%;
     transform: translateX(-50%);
