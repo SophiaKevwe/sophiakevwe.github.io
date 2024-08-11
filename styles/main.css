@@ -189,12 +189,13 @@ section {
     border-radius: 5px;
     color: #333; /* Dark text color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+    width: 60%;
 }
 
 /* White line in the middle */
 .divider {
     width: 10px;
-    background-color: white;
+    background-color: #333;
     height: 100%;
 }
 
