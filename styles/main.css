@@ -158,7 +158,7 @@ section {
 }
 
 .column {
-    width: 48%; /* Each column takes 48% of the width */
+    width: 46%; /* Each column takes 48% of the width */
 }
 
 .logo-column {
@@ -194,7 +194,7 @@ section {
 /* White line in the middle */
 .divider {
     width: 4px;
-    background-color: black;
+    background-color: #000;
     height: 100%;
 }
 
