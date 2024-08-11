@@ -173,13 +173,13 @@ section {
 }
 
 .logo-column img {
-    width: 240px; /* Set the logo size */
-    height: 200px;
+    width: 280px; /* Set the logo size */
+    height: 180px;
     border-radius: 5px;
 }
 
 .company-info {
-    margin-top: 10px;
+    margin-top: 5px;
     color: #333; /* Dark text color */
 }
 
