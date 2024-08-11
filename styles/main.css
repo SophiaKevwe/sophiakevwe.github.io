@@ -174,7 +174,7 @@ section {
 }
 
 .logo-column img {
-    width: 100%;
+    width: 300;
     height: auto;
     border-radius: 5px;
 }
@@ -183,7 +183,7 @@ section {
     width: 100%;
     text-align: center;
     color: #333; /* Dark text color */
-    font-size: 0.8em; /* Smaller font for company info */
+    font-size: 1.2em; /* Smaller font for company info */
 }
 
 .content-column {
