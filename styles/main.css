@@ -165,32 +165,40 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between; /* Ensure space is evenly distributed */
     text-align: center;
     background: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 5px;
-    }
+    height: 100%; /* Ensures the column takes full height */
+}
 
 .logo-column img {
-    width: 300;
-    height: 170px;
+    width: 100%;
+    height: auto;
+    max-height: 80%; /* Ensure image takes most of the space but leaves room for text */
     border-radius: 5px;
 }
 
 .company-info {
     width: 100%;
     text-align: center;
-    color: #333; /* Dark text color */
-    font-size: 1.2em; /* Smaller font for company info */
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 10px; /* Add space between image and text */
 }
 
 .content-column {
-    background: #fff; /* White background for content box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    background: #fff;
     padding: 20px;
     border-radius: 5px;
-    color: #333; /* Dark text color */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+    color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensures the column takes full height */
 }
 
 /* White line in the middle */
