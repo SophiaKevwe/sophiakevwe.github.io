@@ -143,6 +143,7 @@ section {
 
 /* Work Experience Section */
 .timeline {
+    position: relative;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -150,67 +151,61 @@ section {
 
 .timeline-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     margin: 20px 0;
     padding: 20px 0;
     position: relative;
 }
 
-.column {
-    width: 48%; /* Each column takes 48% of the width */
-}
-
-.logo-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Ensure space is evenly distributed */
-    text-align: center;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    height: 100%; /* Ensures the column takes full height */
-}
-
-.logo-column img {
-    width: 100%;
-    height: auto;
-    max-height: 80%; /* Ensure image takes most of the space but leaves room for text */
-    border-radius: 5px;
-}
-
-.company-info {
-    width: 100%;
-    text-align: center;
-    color: #333;
-    font-size: 1.2em;
-    margin-top: 10px; /* Add space between image and text */
-}
-
-.content-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
+.timeline-content {
     background: #fff;
     padding: 20px;
-    border-radius: 5px;
-    color: #333;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    height: 100%; /* Ensures the column takes full height */
-}
-
-/* White line in the middle */
-.divider {
-    position: absolute;
-    top: 0;
+    border-radius: 10px;
+    width: 70%;
+    position: relative;
     left: 50%;
-    width: 6px;
-    background-color: #fff; /* White line in the middle */
-    height: 110%;
     transform: translateX(-50%);
-    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8b3b5e; /* Use the dull pink color */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #8b3b5e; /* Use the dull pink color for the line */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+    left: auto;
+    right: 0;
 }
 
 
