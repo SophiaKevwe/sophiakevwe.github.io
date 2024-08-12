@@ -178,7 +178,7 @@ section {
     background-color: #fff; /* Use the dull pink color */
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -201,8 +201,8 @@ section {
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    left: 20%;
-    right: 50%;
+    left: 30%;
+    right: 0;
     transform: translateX(50%);
 }
 
