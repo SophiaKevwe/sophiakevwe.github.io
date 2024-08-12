@@ -108,7 +108,7 @@ section {
 
 .project img {
     width: 100%;
-    height: 230px;
+    height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -164,7 +164,7 @@ section {
     border-radius: 10px;
     width: 70%;
     position: relative;
-    left:80%;
+    left:50%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333; /* White text for the write-up */
@@ -210,6 +210,7 @@ section {
     left: auto;
     right: 0;
     transform: translateX(45px); /* Adjust the value as needed */
+    height:50%;
 }
 
 
