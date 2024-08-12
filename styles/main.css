@@ -166,13 +166,15 @@ section {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* White text for the write-up */
+    font-size: 1.2em; /* Adjust font size as needed */
 }
 
 .timeline-icon {
-    width: 60px;
+    width: 600px;
     height: 60px;
     border-radius: 50%;
-    background-color: #8b3b5e; /* Use the dull pink color */
+    background-color: #fff; /* Use the dull pink color */
     position: absolute;
     top: 50%;
     left: 0;
@@ -190,7 +192,7 @@ section {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #8b3b5e; /* Use the dull pink color for the line */
+    background-color: #fff; /* Use the dull pink color for the line */
     top: 0;
     bottom: 0;
     left: 50%;
