@@ -163,7 +163,7 @@ section {
     border-radius: 10px;
     width: 70%;
     position: relative;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333; /* White text for the write-up */
@@ -207,7 +207,7 @@ section {
 
 .timeline-item:nth-child(even) .timeline-icon {
     left: auto;
-    right: 0;
+    right: 20%;
 }
 
 
