@@ -103,7 +103,7 @@ section {
     color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 400px;
+    height: 800px;
 }
 
 .project img {
@@ -116,6 +116,7 @@ section {
 .project-description {
     text-align: center;
     padding: 20px;
+    font-size: 1.2em;
 }
 
 .resume-content {
@@ -163,7 +164,7 @@ section {
     border-radius: 10px;
     width: 70%;
     position: relative;
-    left: 60%;
+    left:70%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333; /* White text for the write-up */
@@ -171,8 +172,8 @@ section {
 }
 
 .timeline-icon {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background-color: #fff; /* Use the dull pink color */
     position: absolute;
@@ -207,7 +208,7 @@ section {
 
 .timeline-item:nth-child(even) .timeline-icon {
     left: auto;
-    right: 60%;
+    right: 10%;
 }
 
 
