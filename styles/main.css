@@ -201,7 +201,7 @@ section {
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    left: 30%;
+    left: 80%;
     right: 0;
     transform: translateX(50%);
 }
