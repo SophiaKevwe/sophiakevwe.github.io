@@ -201,15 +201,15 @@ section {
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    left: 80%;
-    right: 0;
+    left: auto;
+    right: 50%;
     transform: translateX(50%);
 }
 
 .timeline-item:nth-child(even) .timeline-icon {
     left: auto;
     right: 0;
-    transform: translateX(45px); /* Adjust the value as needed */
+    transform: translateX(30px); /* Adjust the value as needed */
 }
 
 
