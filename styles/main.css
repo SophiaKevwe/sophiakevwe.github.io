@@ -85,11 +85,40 @@ section {
     text-align: center;
     line-height: 1.7;
 }
+/* Skill Filter */
+.skill-filter {
+    margin: 20px auto; /* Center the filter within the section */
+    text-align: center;
+}
+
+.skill-filter label {
+    font-size: 1.3em; /* Match font size with the existing design */
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff; /* White text to align with the theme */
+}
+
+#skill-select {
+    padding: 10px 15px; /* Add padding for a larger dropdown */
+    font-size: 1em; /* Match dropdown font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #8b3b5e; /* Dull pink border to match the theme */
+    background-color: #2c2c2c; /* Dull gray background for dropdown */
+    color: #fff; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#skill-select:hover {
+    background-color: #8b3b5e; /* Slightly lighter dull pink on hover */
+    color: #fff;
+}
 
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center; /* Center projects for uniformity */
+    gap: 20px; /* Add space between projects */
+    margin-top: 20px; /* Space below the filter */
 }
 
 .project {
@@ -97,15 +126,37 @@ section {
     flex-direction: column;
     align-items: center;
     margin: 5px;
-    width: calc(50% - 50px);
+    width: calc(30% - 20px); /* Adjust width for three projects per row */
     box-sizing: border-box;
-    background-color: #fff; /* Dark color for project columns */
-    color: #333;
+    background-color: #fff; /* White background for project cards */
+    color: #333; /* Dark text color */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 880px;
+    height: auto; /* Allow height to adjust dynamically */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.project.hidden {
+    opacity: 0; /* Make hidden projects invisible */
+    transform: scale(0.9); /* Slightly shrink hidden projects */
+    pointer-events: none; /* Disable interactions with hidden projects */
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        gap: 15px; /* Reduce spacing between projects */
+    }
+
+    .project {
+        width: calc(45% - 20px); /* Adjust to fit two projects per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: calc(100% - 20px); /* Full-width projects for small screens */
+    }
+}
 .project img {
     width: 100%;
     height: 250px;
