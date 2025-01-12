@@ -8,9 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
+            // Adjust the scroll position based on the header height
+            const headerHeight = header.offsetHeight; // Dynamically get header height
+            const targetPosition = targetElement.offsetTop - headerHeight;
+
             window.scrollTo({
-                top: targetElement.offsetTop,
+                top: targetPosition,
                 behavior: 'smooth'
             });
         });
