@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling for navigation links
     const links = document.querySelectorAll('nav ul li a');
     const header = document.querySelector('header');
-
-    // Smooth scrolling for navigation links
     links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
@@ -27,5 +26,22 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             header.classList.remove('transparent');
         }
+    });
+
+    // Skill-based project filtering
+    const skillSelect = document.getElementById('skill-select');
+    const projects = document.querySelectorAll('.project');
+    skillSelect.addEventListener('change', () => {
+        const selectedSkill = skillSelect.value;
+
+        projects.forEach(project => {
+            const projectSkills = project.dataset.skills.split(' '); // Extract skills from data-skills attribute
+
+            if (selectedSkill === 'all' || projectSkills.includes(selectedSkill)) {
+                project.style.display = 'block'; // Show project
+            } else {
+                project.style.display = 'none'; // Hide project
+            }
+        });
     });
 });
