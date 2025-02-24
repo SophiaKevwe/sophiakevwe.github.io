@@ -81,7 +81,7 @@ section {
     align-items: center; /* Horizontally center the content */
     background: none;
     color: #fff; /* White text for the write-up */
-    font-size: 1.5em; /* Adjust font size as needed */
+    font-size: 1.3em; /* Adjust font size as needed */
     text-align: center;
     line-height: 1.7;
 }
@@ -165,7 +165,7 @@ section {
 }
 
 .project-description {
-    text-align: center;
+    text-align: left;
     padding: 20px;
     font-size: 1.2em;
 }
