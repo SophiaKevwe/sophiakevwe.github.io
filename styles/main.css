@@ -115,25 +115,26 @@ section {
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center projects for uniformity */
-    gap: 20px; /* Add space between projects */
-    margin-top: 20px; /* Space below the filter */
+    flex-direction: row; /* Align projects in a row */
+    justify-content: flex-start; /* Align to the left */
+    gap: 20px; /* Space between projects */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    padding: 10px 0;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px;
-    width: calc(30% - 20px); /* Adjust width for three projects per row */
+    display: inline-block; /* Keep projects in a single row */
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 300px; /* Set a fixed width */
     box-sizing: border-box;
-    background-color: #fff; /* White background for project cards */
-    color: #333; /* Dark text color */
+    background-color: #fff;
+    color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: auto; /* Allow height to adjust dynamically */
+    height: auto;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: normal; /* Allow text wrapping inside */
 }
 
 .project.hidden {
