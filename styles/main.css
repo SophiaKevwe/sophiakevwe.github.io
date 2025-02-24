@@ -115,26 +115,25 @@ section {
 
 .projects-container {
     display: flex;
-    flex-direction: column; /* Arrange projects in a vertical list */
-    align-items: center; /* Center each project in the container */
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center; /* Center each project */
     gap: 30px; /* Add space between projects */
     margin-top: 20px;
 }
 
 .project {
-    display: inline-block; /* Keep projects in a single row */
-    flex: 0 0 auto; /* Prevent shrinking */
-    width: 80%; /* Adjust width so each project takes most of the screen width */
-    max-width: 800px; /* Prevent it from becoming too wide */
+    width: 80%; /* Each project takes most of the screen width */
+    max-width: 800px; /* Prevents projects from being too wide */
     box-sizing: border-box;
     background-color: #fff;
     color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: auto;
+    height: auto; /* Allow height to adjust dynamically */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    white-space: normal; /* Allow text wrapping inside */
+    white-space: normal; /* Allow text wrapping */
 }
+
 
 .project.hidden {
     opacity: 0; /* Make hidden projects invisible */
