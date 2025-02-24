@@ -122,7 +122,7 @@ section {
 }
 
 .project {
-    width: 80%; /* Each project takes most of the screen width */
+    width: 90%; /* Each project takes most of the screen width */
     max-width: 800px; /* Prevents projects from being too wide */
     box-sizing: border-box;
     background-color: #fff;
@@ -144,7 +144,7 @@ section {
 
 .project img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -152,7 +152,7 @@ section {
 .project-description {
     text-align: left;
     padding: 20px;
-    font-size: 0.8em;
+    font-size: 1.0em;
 }
 
 .resume-content {
@@ -251,11 +251,11 @@ section {
 
 
 #work-experience {
-    font-size: 20px; /* Reduce overall text size */
+    font-size: 10px; /* Reduce overall text size */
 }
 
 #work-experience h3 {
-    font-size: 30px; /* Slightly bigger for company name */
+    font-size: 20px; /* Slightly bigger for company name */
     font-weight: bold;
 }
 
