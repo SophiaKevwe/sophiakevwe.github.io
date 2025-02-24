@@ -126,7 +126,7 @@ section {
     flex-direction: row; /* Image on one side, text on the other */
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Ensure spacing between image and text */
-    width: 90%; /* Set project width */
+    width: 95%; /* Set project width */
     max-width: 900px; /* Limit max width */
     box-sizing: border-box;
     background-color: #fff;
@@ -135,7 +135,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: auto; /* Allow height to adjust dynamically */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    padding: 10px;
+    padding: 5px;
 }
 
 
@@ -148,7 +148,7 @@ section {
 
 .project img {
     width: 40%; /* Adjust width of the image */
-    height: 250px; /* Maintain aspect ratio */
+    height: 80%; /* Maintain aspect ratio */
     border-radius: 10px;
 }
 
