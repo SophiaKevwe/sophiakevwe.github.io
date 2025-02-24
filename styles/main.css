@@ -147,10 +147,10 @@ section {
 
 
 .project img {
-    width: 250px; /* Adjust width of the image */
-    height: 200px; /* Maintain aspect ratio */
+    width: 300px; /* Adjust width of the image */
+    height: 500px; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures images fill the space without distortion */
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .project-description {
@@ -220,7 +220,7 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 10px; /* Moves it slightly inside the box */
+    left: 0px; /* Moves it slightly inside the box */
 }
 
 .timeline-icon img {
