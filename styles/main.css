@@ -220,7 +220,7 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -100px; /* Moves it slightly inside the box */
+    left: -95px; /* Moves it slightly inside the box */
 }
 
 .timeline-icon img {
