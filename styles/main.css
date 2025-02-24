@@ -115,18 +115,17 @@ section {
 
 .projects-container {
     display: flex;
-    flex-direction: row; /* Align projects in a row */
-    justify-content: flex-start; /* Align to the left */
-    gap: 20px; /* Space between projects */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    padding: 10px 0;
-    white-space: nowrap; /* Prevent wrapping */
+    flex-direction: column; /* Arrange projects in a vertical list */
+    align-items: center; /* Center each project in the container */
+    gap: 30px; /* Add space between projects */
+    margin-top: 20px;
 }
 
 .project {
     display: inline-block; /* Keep projects in a single row */
     flex: 0 0 auto; /* Prevent shrinking */
-    width: 300px; /* Set a fixed width */
+    width: 80%; /* Adjust width so each project takes most of the screen width */
+    max-width: 800px; /* Prevent it from becoming too wide */
     box-sizing: border-box;
     background-color: #fff;
     color: #333;
