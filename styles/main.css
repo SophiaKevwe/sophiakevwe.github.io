@@ -133,7 +133,7 @@ section {
     color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 200px; /* Allow height to adjust dynamically */
+    height: 280px; /* Allow height to adjust dynamically */
     transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 10px;
 }
@@ -148,7 +148,7 @@ section {
 
 .project img {
     width: 40%; /* Adjust width of the image */
-    height: 180px; /* Maintain aspect ratio */
+    height: 250px; /* Maintain aspect ratio */
     border-radius: 10px;
 }
 
@@ -225,9 +225,9 @@ section {
 }
 
 .timeline-icon img {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .timeline::before {
