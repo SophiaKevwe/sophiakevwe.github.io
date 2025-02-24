@@ -133,7 +133,7 @@ section {
     color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 280px; /* Allow height to adjust dynamically */
+    height: auto; /* Allow height to adjust dynamically */
     transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 10px;
 }
