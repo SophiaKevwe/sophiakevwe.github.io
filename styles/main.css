@@ -141,24 +141,10 @@ section {
     pointer-events: none; /* Disable interactions with hidden projects */
 }
 
-@media (max-width: 768px) {
-    .projects-container {
-        gap: 15px; /* Reduce spacing between projects */
-    }
 
-    .project {
-        width: calc(45% - 20px); /* Adjust to fit two projects per row */
-    }
-}
-
-@media (max-width: 480px) {
-    .project {
-        width: calc(100% - 20px); /* Full-width projects for small screens */
-    }
-}
 .project img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
