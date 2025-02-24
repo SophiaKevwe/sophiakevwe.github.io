@@ -135,7 +135,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: auto; /* Allow height to adjust dynamically */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    padding: 5px;
+    padding: 10px;
 }
 
 
@@ -147,8 +147,9 @@ section {
 
 
 .project img {
-    width: 40%; /* Adjust width of the image */
-    height: 80%; /* Maintain aspect ratio */
+    width: 250px; /* Adjust width of the image */
+    height: 200px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images fill the space without distortion */
     border-radius: 10px;
 }
 
@@ -211,15 +212,15 @@ section {
 }
 
 .timeline-icon {
-    width: 130px;
-    height: 130px;
+    width: 100px; /* Adjust image size */
+    height: 100px;
     border-radius: 50%;
-    background-color: #fff; /* Keeps the background color */
+    background-color: #fff; /* Keeps background */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Centers it vertically */
-    right: -150px; /* Moves it to the far right edge of the box */
+    transform: translateY(-50%);
+    left: 10px; /* Moves it slightly inside the box */
 }
 
 .timeline-icon img {
