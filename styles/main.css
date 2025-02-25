@@ -117,8 +117,9 @@ section {
     display: flex;
     flex-direction: column; /* Stack projects vertically */
     align-items: center; /* Center each project */
-    gap: 30px; /* Add space between projects */
+    gap: 30px; /* Keep space between projects */
     margin-top: 5px;
+    min-height: 500px; /* Prevent container from collapsing */
 }
 
 .project {
@@ -143,8 +144,9 @@ section {
     opacity: 0; /* Make hidden projects invisible */
     transform: scale(0.9); /* Slightly shrink hidden projects */
     pointer-events: none; /* Disable interactions with hidden projects */
+    display: block; /* Ensures layout doesn't shift */
+    visibility: hidden; /* Hides without removing space */
 }
-
 
 .project img {
     width: 30%; /* Adjust width of the image */
