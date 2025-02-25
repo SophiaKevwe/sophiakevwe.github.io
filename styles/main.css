@@ -144,8 +144,10 @@ section {
     opacity: 0; /* Make hidden projects invisible */
     transform: scale(0.9); /* Slightly shrink hidden projects */
     pointer-events: none; /* Disable interactions with hidden projects */
-    display: block; /* Ensures layout doesn't shift */
-    visibility: hidden; /* Hides without removing space */
+    visibility: hidden; /* Keep space reserved to prevent layout shifting */
+    height: 0; /* Collapse the height smoothly */
+    overflow: hidden; /* Prevent content from being seen */
+    transition: all 0.3s ease-in-out;
 }
 
 .project img {
