@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const projectSkills = project.dataset.skills.split(' '); // Extract skills from data-skills attribute
 
             if (selectedSkill === 'all' || projectSkills.includes(selectedSkill)) {
-                project.style.display = 'block'; // Show project
+                project.classList.remove('hidden'); // Show matching projects
             } else {
-                project.style.display = 'none'; // Hide project
+                project.classList.add('hidden'); // Hide non-matching projects
             }
         });
     });
