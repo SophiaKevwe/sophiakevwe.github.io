@@ -200,6 +200,7 @@ section {
     align-items: center; /* Aligns items in the center vertically */
     justify-content: space-between; /* Ensures space between text and image */
     position: relative;
+    margin-bottom: 60px;
 }
 
 .timeline-content {
